@@ -1,0 +1,39 @@
+@import "../Scss//extends";
+@import "../Scss//includes";
+@import "../Scss//variables";
+
+#Nav {
+    // position: sticky;
+    // top: 0;
+    // z-index: 1000;
+  nav {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    ol {
+      @include flex-between;
+      color: #079607;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      list-style-type: none;
+      flex-wrap: wrap;
+
+      .center {
+        @include flex-center;
+        gap: 61px;
+        padding: 20px;
+
+        a {
+          text-decoration: none;
+          color: #079607;
+        }
+      }
+
+      .socials {
+        @include flex-center;
+        gap: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
